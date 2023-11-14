@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <div class="btn-group-vertical w-100" role="group" aria-label="Basic radio toggle button group">
+            <label class="btn btn-outline-primary w-100">
+                <input type="radio" class="btn-check" name="filter" id="all" (change)="setFilter('all')"
+                    [checked]="filter === 'all'"> Todas
+            </label>
+            <label class="btn btn-outline-primary w-100">
+                <input type="radio" class="btn-check" name="filter" id="completed" (change)="setFilter('completed')"
+                    [checked]="filter === 'completed'"> Completadas
+            </label>
+            <label class="btn btn-outline-primary w-100">
+                <input type="radio" class="btn-check" name="filter" id="incomplete" (change)="setFilter('incomplete')"
+                    [checked]="filter === 'incomplete'"> No completadas
+            </label>
+        </div>
+    </div>
+</div>
